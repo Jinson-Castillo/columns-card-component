@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* font-size: 62.5%; 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+}
+
+/** Globales **/
+.card {
+    width: 30rem;
+    height: 42rem;
+    color:  hsla(0, 0%, 100%, 0.75);
+    padding: 4rem;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-family: 'Lexend Deca', sans-serif; 
+}
+
+.btn:hover {
+    background-color: transparent;
+    color:hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+/** utilities **/
+.m-top {
+    margin-top: 10rem;
+}
+
+@media (min-width: 550px) {
+    .m-top {
+        margin-top: 8rem;
+    }
+}
+
+/** Cards **/
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 65rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 550px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+.card h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.card p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+@media (min-width: 550px) {
+    .sedans {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0;
+    }
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+@media (min-width: 550px) {
+    .luxury {
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    } 
+}
+
+.btn-orange {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-cyan {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-dark-cyan {
+    color: hsl(179, 100%, 13%);
+}
